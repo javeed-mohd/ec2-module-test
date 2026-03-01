@@ -12,7 +12,7 @@
 
 module "ec2" {
     source          = "../terraform-aws-instance"
-    project         = var.project_name # project/project_name can be used as we wish(Not necessarily it should be same but it gives the exact value required.)
+    project         = var.project_name # project/project_name can be used as we wish(Not necessarily it should be same but it gives the exact default value provided.)
     environment     = var.env
     ami_id          = "ami-0220d79f3f480ecf5"
     instance_type   = "t3.large"
