@@ -10,6 +10,7 @@
 #     }
 # }
 
+
 module "ec2" {
     source          = "../terraform-aws-instance"
     project         = var.project_name # project/project_name can be used as we wish(Not necessarily it should be same but it gives the exact default value provided.)
