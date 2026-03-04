@@ -12,7 +12,7 @@
 
 
 module "ec2" {
-    source          = "../terraform-aws-instance"
+    source          = "../terraform-aws-instance" # In projects, we use "git::https://github.com/javeed-mohd/terraform-aws-instance.git?ref=main", to directly get it from git if someone updated...
     project         = var.project_name # project/project_name can be used as you wish(Not necessarily it should be same but it gives the exact default value provided).
     environment     = var.env
     ami_id          = data.aws_ami.joindevops.id
