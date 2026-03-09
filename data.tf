@@ -1,4 +1,4 @@
-# data-source file
+# data-source
 data "aws_ami" "joindevops" {
   most_recent      = true
   owners           = ["973714476881"]
